@@ -44,7 +44,8 @@ public class GateWayFilter implements Filter{
             log.info("验证成功，请求来自网关");
             filterChain.doFilter(servletRequest, servletResponse);
         }else {
-            //todo 验证失败，请求不来自网关，直接返回
+            //验证失败，请求不来自网关，直接返回
+            log.info("验证失败，请求不来自网关，直接返回");
             Result result = Result.build(null, ResultCodeEnum.GATEWAY_NO);
             byte[] bits = JSONObject.toJSONString(result).getBytes(StandardCharsets.UTF_8);
 
