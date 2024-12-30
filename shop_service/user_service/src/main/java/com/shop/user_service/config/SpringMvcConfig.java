@@ -36,7 +36,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     public FilterRegistrationBean<GateWayFilter> myFilterRegistration(){
         FilterRegistrationBean<GateWayFilter> filterRegistrationBean = new FilterRegistrationBean<>(new GateWayFilter());
         String[] urlPatterns = {
-                "/*"
+                "/user/*"
         };
         filterRegistrationBean.addUrlPatterns(urlPatterns);
         filterRegistrationBean.setOrder(-1);
