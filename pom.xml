@@ -13,6 +13,9 @@
         <module>shop_common</module>
         <module>shop_service</module>
         <module>shop_gateway</module>
+        <module>shop_service/user_service</module>
+        <module>shop_service/order_service</module>
+        <module>shop_service/product_service</module>
     </modules>
 
 

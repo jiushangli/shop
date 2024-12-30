@@ -11,6 +11,8 @@
 
     <artifactId>shop_service</artifactId>
 
+    <packaging>pom</packaging>
+
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
